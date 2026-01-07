@@ -14,7 +14,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 정선군 교통사업소 모범운전자 선진지 견학</title>
+    <title>2026 정선군 교통관리사업소 모범운전자 선진지 견학</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,9 +24,9 @@
         body { font-family: 'Noto Sans KR', sans-serif; background-color: #f8fafc; color: #1e293b; }
         .font-serif { font-family: 'Nanum Myeongjo', serif; }
         
-        /* Hero Background - Jeju Landscape */
+        /* Hero Background - Updated Request */
         .hero-bg-jeju { 
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1548115184-bc6544d06a58?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://tse1.mm.bing.net/th/id/OIP.uRDeOLCkqQbu-54kqW6KIwHaE8?w=474&h=379&c=7&p=0');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -54,8 +54,16 @@
             transform: scale(1.2);
         }
 
-        /* Timeline Styling */
-        .timeline-item::before { content: ''; position: absolute; left: 19px; top: 0; bottom: 0; width: 2px; background-color: #e2e8f0; }
+        /* Timeline Styling - Modified for left alignment */
+        .timeline-item::before { 
+            content: ''; 
+            position: absolute; 
+            left: -32px; /* 기존 19px에서 -32px로 수정하여 점과 정렬 맞춤 */
+            top: 0; 
+            bottom: 0; 
+            width: 2px; 
+            background-color: #e2e8f0; 
+        }
         .timeline-item:first-child::before { top: 20px; }
         .timeline-item:last-child::before { bottom: auto; height: 20px; }
 
@@ -121,7 +129,7 @@
         <!-- Hero Section -->
         <section id="home" class="hero-bg-jeju text-white text-center flex items-center justify-center min-h-[85vh] relative">
             <div class="container mx-auto px-4 z-10">
-                <p class="text-lg md:text-xl font-medium text-sky-300 mb-2 tracking-wider">정선군 교통사업소</p>
+                <p class="text-lg md:text-xl font-medium text-sky-300 mb-2 tracking-wider">정선군 교통관리사업소</p>
                 <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight drop-shadow-xl font-serif">
                     2026 모범운전자<br>선진지 견학 & 힐링 투어
                 </h1>
@@ -158,9 +166,7 @@
                         제주의 아름다운 자연 속에서 동료들과 화합을 다지는<br>
                         뜻깊은 시간이 되시기를 기원합니다.
                     </p>
-                    <div class="mt-8">
-                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker" class="h-6 mx-auto opacity-70">
-                    </div>
+                    <!-- 로고 삭제 요청 반영됨 -->
                 </div>
             </div>
         </section>
@@ -178,7 +184,7 @@
                     <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 group hover:-translate-y-2 transition-transform duration-300">
                         <div class="h-48 bg-slate-200 relative overflow-hidden">
                             <img src="https://lh5.googleusercontent.com/p/AF1QipN38XqS_sN38XqS_sN38XqS_sN38XqS_sN38XqS=w408-h306-k-no" onerror="this.src='https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80'" alt="국토교통인재개발원" class="w-full h-full object-cover">
-                            <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">공식 방문</div>
+                            <div class="absolute top-4 left-4 bg-gray-600 text-white text-xs font-bold px-3 py-1 rounded-full">방문 예정</div>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-3 text-slate-900">국토교통인재개발원<br>제주교육센터</h3>
@@ -193,8 +199,8 @@
 
                     <!-- Point 2: Performance -->
                     <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 group hover:-translate-y-2 transition-transform duration-300">
-                         <!-- Video Container -->
-                         <div class="h-48 bg-black relative cursor-pointer" onclick="playVideo(this, '3nSpNa1sCUg')">
+                          <!-- Video Container: 썸네일 적용 -->
+                          <div class="h-48 bg-black relative cursor-pointer" onclick="playVideo(this, '3nSpNa1sCUg')">
                             <img src="https://img.youtube.com/vi/3nSpNa1sCUg/maxresdefault.jpg" alt="Sky Water Show" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
                             <div class="absolute inset-0 flex items-center justify-center play-overlay">
                                 <i class="fa-solid fa-play text-white text-4xl play-icon"></i>
@@ -212,7 +218,7 @@
                     <!-- Point 3: Healing -->
                     <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 group hover:-translate-y-2 transition-transform duration-300">
                         <div class="h-48 bg-slate-200 relative overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1627523999564-28b9487c046e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Jeju Forest" class="w-full h-full object-cover">
+                            <img src="https://live.staticflickr.com/65535/51181003032_7308d4f03a_b.jpg" alt="Jeju Forest" class="w-full h-full object-cover">
                             <div class="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full">자연 힐링</div>
                         </div>
                         <div class="p-6">
@@ -245,7 +251,9 @@
                 <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center">
                     <div class="md:w-1/2">
                         <div class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-bold mb-4">Accommodation & Seminar</div>
-                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">서귀포 오션 호텔<br><span class="text-xl font-normal text-slate-500">(Seogwipo Ocean / 골든데이지 급)</span></h2>
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">서귀포 오션 호텔<br>
+                            <!-- 수정: 골든데이지 급 삭제 -->
+                        </h2>
                         
                         <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-6">
                             <h3 class="text-lg font-bold text-slate-800 mb-3 flex items-center">
@@ -255,9 +263,10 @@
                                 호텔 내 연회장/세미나실을 활용하여 교통사업소 자체 간담회 및 성과 공유 시간을 갖습니다. (2일차 오전 예정)
                             </p>
                             <ul class="text-sm text-slate-600 space-y-2">
-                                <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> 빔프로젝터 및 음향 시설 완비</li>
+                                <!-- 수정: 빔프로젝터 삭제 -->
                                 <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> 편안한 2인 1실 객실 제공</li>
                                 <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> 서귀포 매일올레시장 도보 이동 가능</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> 조식 뷔페 제공</li>
                             </ul>
                         </div>
                         <div class="flex gap-3">
@@ -267,10 +276,16 @@
                         </div>
                     </div>
                     <div class="md:w-1/2">
-                        <div class="grid grid-cols-2 gap-4">
-                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/330962804.jpg?k=3f4c6e96245f3408f64f43c3f9b2d3e4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4&o=&hp=1" alt="호텔 외관" class="w-full h-48 object-cover rounded-xl shadow-md">
-                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/330962817.jpg?k=3f4c6e96245f3408f64f43c3f9b2d3e4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4&o=&hp=1" alt="세미나실/연회장" class="w-full h-48 object-cover rounded-xl shadow-md">
-                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/330962837.jpg?k=3f4c6e96245f3408f64f43c3f9b2d3e4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4&o=&hp=1" alt="객실" class="col-span-2 w-full h-40 object-cover rounded-xl shadow-md">
+                        <!-- 수정: 사진 레이아웃 변경 (외관, 객실만 표시) -->
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="relative group">
+                                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/519404566.jpg?k=9eda7241deb411aa147516f66f1daeb5e91ca0f9bfc7d6b93ad1a4b30e543827&o=" alt="호텔 외관" class="w-full h-64 object-cover rounded-xl shadow-md">
+                                <div class="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">호텔 외관</div>
+                            </div>
+                            <div class="relative group">
+                                <img src="https://images.trvl-media.com/lodging/8000000/7510000/7505700/7505654/194a4c86.jpg?impolicy=resizecrop&ra=fill&rh=575&rw=575" alt="객실" class="w-full h-64 object-cover rounded-xl shadow-md">
+                                <div class="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">객실 (참고용)</div>
+                            </div>
                         </div>
                         <p class="text-xs text-slate-400 mt-2 text-right">* 상기 이미지는 참고용이며, 실제 배정 객실과 다를 수 있습니다.</p>
                     </div>
@@ -362,7 +377,7 @@
                                 <div class="absolute -left-[41px] bg-white border-4 border-blue-600 w-5 h-5 rounded-full"></div>
                                 <span class="text-blue-600 font-bold text-sm block mb-1">오전</span>
                                 <h4 class="text-lg font-bold text-slate-800">국토교통인재개발원 제주교육센터</h4>
-                                <p class="text-slate-500 text-sm">시설 견학 및 교통 안전 정책 청취</p>
+                                <p class="text-slate-500 text-sm">시설 견학 및 교통 안전 정책 청취 (방문 예정)</p>
                             </div>
                             <div class="timeline-item relative">
                                 <div class="absolute -left-[41px] bg-white border-4 border-slate-300 w-5 h-5 rounded-full"></div>
@@ -450,17 +465,18 @@
                     <!-- Meeting Card -->
                     <div class="bg-white rounded-2xl p-8 shadow-lg border-l-8 border-red-500 mb-8 flex flex-col md:flex-row gap-8 items-center">
                         <div class="text-center md:text-left flex-grow">
-                            <h3 class="text-2xl font-bold text-red-600 mb-2">🚩 원주공항 집결 안내</h3>
-                            <p class="text-slate-700 font-bold text-lg mb-4">2026년 3월 16일 (월) 오전 10:00 까지</p>
+                            <h3 class="text-2xl font-bold text-red-600 mb-2">🚩 집결 장소 및 시간 안내</h3>
+                            <!-- 수정: 추후 통보 반영 -->
+                            <p class="text-slate-700 font-bold text-lg mb-4">추후 별도 공지 (정선 관내 예정)</p>
                             <div class="bg-slate-100 p-4 rounded-lg inline-block text-slate-600 text-sm">
                                 <strong>준비물:</strong> 신분증(필수), 개인 상비약, 세면도구, 편한 복장(운동화)
                             </div>
                         </div>
                         <div class="flex-shrink-0 text-center">
                             <div class="w-32 h-32 bg-slate-200 rounded-full flex items-center justify-center mx-auto mb-2">
-                                <i class="fa-solid fa-plane-departure text-4xl text-slate-500"></i>
+                                <i class="fa-solid fa-map-location-dot text-4xl text-slate-500"></i>
                             </div>
-                            <p class="text-xs text-slate-500">원주공항 대합실</p>
+                            <p class="text-xs text-slate-500">추후 공지</p>
                         </div>
                     </div>
 
@@ -491,12 +507,8 @@
                         <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-yellow-400">
                             <h3 class="text-lg font-bold mb-4 flex items-center"><i class="fa-solid fa-phone-volume text-yellow-600 mr-2"></i> 비상 연락망</h3>
                             <div class="space-y-4">
-                                <div class="text-center">
-                                    <p class="text-sm text-slate-500 mb-1">투어메이커 총괄</p>
-                                    <p class="text-xl font-bold text-slate-800">조혁 이사</p>
-                                    <a href="tel:010-4249-4026" class="text-blue-600 font-bold block mt-1">010-4249-4026</a>
-                                </div>
-                                <div class="border-t border-slate-100 pt-4 text-center">
+                                <div class="text-center pt-4">
+                                    <!-- 수정: 인솔 담당자만 표시 -->
                                     <p class="text-sm text-slate-500 mb-1">인솔 담당자</p>
                                     <p class="text-xl font-bold text-slate-800">이재명</p>
                                     <a href="tel:010-9443-7881" class="text-blue-600 font-bold block mt-1">010-9443-7881</a>
